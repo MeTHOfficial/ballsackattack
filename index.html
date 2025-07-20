@@ -1,0 +1,121 @@
+<html lang="en-US" dir="ltr">
+<head>
+  <title>Just a moment...</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="refresh" content="360">
+
+  <!-- your existing JS/CSS -->
+  <script src="js/v1_ray_961e5b7eb9de62c2"></script>
+  <link rel="stylesheet" href="css/inject.css">
+  <script src="js/constants.js"></script>
+  <link rel="stylesheet" href="css/inline_styles.css">
+
+  <style>
+    /* 1) Full‐screen flex container */
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+    }
+    .main-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; /* vertical centering */
+      align-items: center;     /* horizontal centering */
+      height: calc(100% - 60px); /* leave room for footer (approx) */
+    }
+
+    /* 2) Verifying text right above iframe */
+    p#gvol0 {
+      margin: 0 0 8px;
+      font-size: 1.2em;
+      line-height: 1.2;
+      text-align: center;
+    }
+
+    /* 3) Captcha iframe */
+    .captcha-container {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      line-height: 0;
+    }
+    .captcha-container iframe {
+      display: block;
+      border: none;
+      width: 320px;
+      height: 360px;
+      scrolling: no;
+    }
+
+    /* 4) Messages below iframe (initially hide if undesired) */
+    #vVgbN6, #isoLi6, #CqZXh4, #lOTEI4 {
+      margin: 0;
+      padding: 0;
+    }
+
+    /* 5) Footer sticks to bottom */
+    .footer {
+      bottom: 0;
+      width: 100%;
+      height: 60px; /* adjust if needed */
+      overflow: hidden;
+    }
+    .footer-inner {
+      text-align: center;
+      font-size: 0.9em;
+      line-height: 1.2;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="vsc-constants-loaded" style="display: none;">
+    Constants loaded at 2025-07-20T00:31:45.156Z
+  </div>
+
+  <!-- your existing scripts -->
+  <script src="js/logger.js"></script>
+  <script src="js/dom_utils.js"></script>
+  <!-- …etc… -->
+  <script src="js/inline_scripts.js"></script>
+
+  <div class="main-wrapper" role="main">
+    <h1 class="zone-name-title h1">gagprices.com</h1>
+
+    <p id="gvol0" class="h2">Verifying you are human. This may take a few seconds.</p>
+
+    <div class="captcha-container">
+      <iframe src="index2.html" scrolling="no"></iframe>
+    </div>
+
+    <!-- hidden by default; unhide via JS as needed -->
+    <div id="vVgbN6" style="display: none;">
+      <input type="hidden" name="cf-turnstile-response" id="cf-chl-widget-24l0v_response">
+    </div>
+    <div id="isoLi6" class="spacer loading-verifying" style="display: none;">
+      <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+    </div>
+    <div id="CqZXh4" class="core-msg spacer-top" style="display: none;">
+      gagprices.com needs to review the security of your connection before proceeding.
+    </div>
+    <div id="lOTEI4" style="display: none;">
+      <div id="challenge-success-text" class="h2">Verification successful</div>
+      <div class="core-msg spacer">Waiting for gagprices.com to respond...</div>
+    </div>
+  </div>
+
+  <div class="footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="ray-id">Ray ID: <code>961e5b7eb9de62c2</code></div>
+      Performance &amp; security by
+      <a href="https://www.cloudflare.com?utm_source=challenge&amp;utm_campaign=m" target="_blank" rel="noopener">Cloudflare</a>
+    </div>
+  </div>
+
+</body>
+</html>
